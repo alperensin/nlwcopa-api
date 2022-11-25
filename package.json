@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "prestart": "npx prisma generate && npx prisma migrate dev && tsc",
     "start": "node dist/server.js",
     "dev": "tsx watch src/server.ts"
   },
